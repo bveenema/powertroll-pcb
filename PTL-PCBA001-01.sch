@@ -247,9 +247,9 @@ Text Label 9400 1350 2    60   ~ 0
 CRNT1
 Text Label 11500 1350 2    60   ~ 0
 CRNT2
-Text Label 9250 6150 2    60   ~ 0
-SSR1
 Text Label 9250 6250 2    60   ~ 0
+SSR1
+Text Label 9250 6150 2    60   ~ 0
 SSR2
 Text Label 11900 1900 0    60   ~ 0
 SSR1
@@ -259,9 +259,9 @@ Text Notes 12000 750  0    60   ~ 0
 HIGH CURRENT SSR'S
 Text Notes 7800 750  0    60   ~ 0
 CURRENT SENSORS
-Text Label 6700 6750 0    60   ~ 0
+Text Label 6600 6850 0    60   ~ 0
 CRNT1
-Text Label 6700 6850 0    60   ~ 0
+Text Label 6600 6750 0    60   ~ 0
 CRNT2
 Wire Wire Line
 	15300 1700 15300 1950
@@ -276,19 +276,25 @@ Wire Wire Line
 Wire Wire Line
 	13500 1700 13500 1950
 Wire Wire Line
-	10600 1900 10600 2100
+	10600 1900 10600 2000
+Wire Wire Line
+	10600 2000 10600 2100
 Wire Wire Line
 	9900 1750 9900 2000
 Connection ~ 10600 2000
 Wire Wire Line
 	9900 2000 10600 2000
 Wire Wire Line
-	8550 1900 8550 2100
+	8550 1900 8550 2000
+Wire Wire Line
+	8550 2000 8550 2100
 Wire Wire Line
 	7850 1750 7850 2000
 Connection ~ 8550 2000
 Wire Wire Line
-	7850 1100 7850 1450
+	7850 1100 7850 1350
+Wire Wire Line
+	7850 1350 7850 1450
 Wire Wire Line
 	7850 2000 8550 2000
 Wire Wire Line
@@ -308,9 +314,9 @@ Wire Notes Line
 Wire Notes Line
 	11650 2400 7450 2400
 Wire Wire Line
-	6350 6750 7050 6750
+	6250 6750 7050 6750
 Wire Wire Line
-	6350 6850 7050 6850
+	6250 6850 7050 6850
 $Comp
 L Fuse F1
 U 1 1 55E861CE
@@ -325,16 +331,16 @@ $EndComp
 Wire Wire Line
 	1050 1250 1350 1250
 Wire Wire Line
-	6350 6150 7050 6150
+	6250 6150 7050 6150
 Wire Wire Line
-	6350 6250 7050 6250
+	6250 6250 7050 6250
 Wire Wire Line
-	6350 6350 7050 6350
+	6250 6350 7050 6350
 Wire Wire Line
-	6350 6450 7050 6450
-Text Label 6700 6150 0    60   ~ 0
+	6250 6450 7050 6450
+Text Label 6600 6150 0    60   ~ 0
 SNSR2
-Text Label 6700 6250 0    60   ~ 0
+Text Label 6600 6250 0    60   ~ 0
 SNSR1
 $Comp
 L SUPPLY PWRSPLY1
@@ -354,7 +360,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 1250 4700 1250
 Wire Wire Line
-	4950 1050 4950 1250
+	4950 1050 4950 1100
+Wire Wire Line
+	4950 1100 4950 1250
 Wire Wire Line
 	1650 1250 2150 1250
 Text Label 2100 1250 2    60   ~ 0
@@ -402,14 +410,14 @@ $EndComp
 Wire Wire Line
 	8350 6650 9250 6650
 Wire Wire Line
-	6350 5950 7050 5950
+	6250 5950 7050 5950
 Wire Wire Line
-	6350 6550 7050 6550
+	6250 6550 7050 6550
 Wire Wire Line
-	6350 6650 7050 6650
-Text Label 6350 5750 0    60   ~ 0
+	6250 6650 7050 6650
+Text Label 6250 5750 0    60   ~ 0
 PIN1
-Text Label 6350 5850 0    60   ~ 0
+Text Label 6250 5850 0    60   ~ 0
 PIN2
 Text Label 8400 6350 0    60   ~ 0
 PIN18
@@ -417,23 +425,23 @@ Text Label 8400 6250 0    60   ~ 0
 PIN19
 Text Label 8400 6150 0    60   ~ 0
 PIN20
-Text Label 6350 5950 0    60   ~ 0
+Text Label 6250 5950 0    60   ~ 0
 PIN3
-Text Label 6350 6150 0    60   ~ 0
+Text Label 6250 6150 0    60   ~ 0
 PIN5
-Text Label 6350 6250 0    60   ~ 0
+Text Label 6250 6250 0    60   ~ 0
 PIN6
-Text Label 6350 6350 0    60   ~ 0
+Text Label 6250 6350 0    60   ~ 0
 PIN7
-Text Label 6350 6450 0    60   ~ 0
+Text Label 6250 6450 0    60   ~ 0
 PIN8
-Text Label 6350 6550 0    60   ~ 0
+Text Label 6250 6550 0    60   ~ 0
 PIN9
-Text Label 6350 6650 0    60   ~ 0
+Text Label 6250 6650 0    60   ~ 0
 PIN10
-Text Label 6350 6750 0    60   ~ 0
+Text Label 6250 6750 0    60   ~ 0
 PIN11
-Text Label 6350 6850 0    60   ~ 0
+Text Label 6250 6850 0    60   ~ 0
 PIN12
 $Comp
 L PARTICLE_PHOTON U3
@@ -461,10 +469,10 @@ Wire Wire Line
 Wire Wire Line
 	8350 5750 9300 5750
 Wire Wire Line
-	6250 5850 7050 5850
+	6150 5850 7050 5850
 Wire Wire Line
-	7050 6050 6350 6050
-Text Label 6350 6050 0    60   ~ 0
+	7050 6050 6250 6050
+Text Label 6250 6050 0    60   ~ 0
 PIN4
 Text Label 8400 6850 0    60   ~ 0
 PIN13
@@ -493,11 +501,15 @@ Wire Wire Line
 Wire Wire Line
 	8350 6250 9250 6250
 Wire Wire Line
-	12500 1900 13400 1900
+	12500 1900 12700 1900
+Wire Wire Line
+	12700 1900 13400 1900
 Wire Wire Line
 	12200 1900 11900 1900
 Wire Wire Line
-	14300 1900 15200 1900
+	14300 1900 14450 1900
+Wire Wire Line
+	14450 1900 15200 1900
 Wire Wire Line
 	14000 1900 13650 1900
 $Comp
@@ -512,7 +524,7 @@ F 3 "" H 9300 5450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 5850 6250 7150
+	6150 5850 6150 7150
 $Comp
 L GND #PWR08
 U 1 1 55E9835F
@@ -581,7 +593,9 @@ F 3 "~" H 1450 5200 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1600 5200 1800 5200
+	1600 5200 1650 5200
+Wire Wire Line
+	1650 5200 1800 5200
 Wire Wire Line
 	1300 5200 1250 5200
 Wire Wire Line
@@ -620,7 +634,7 @@ F 3 "" H 2400 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 5750 7050 5750
+	6200 5750 7050 5750
 $Comp
 L +3.3V #PWR012
 U 1 1 55EA5CF3
@@ -633,7 +647,9 @@ F 3 "" H 9900 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 1100 9900 1450
+	9900 1100 9900 1350
+Wire Wire Line
+	9900 1350 9900 1450
 Wire Wire Line
 	10050 1350 9900 1350
 Connection ~ 9900 1350
@@ -800,12 +816,12 @@ AUX_I2C_EN
 $Comp
 L GND #PWR018
 U 1 1 5858D37A
-P 6250 7150
-F 0 "#PWR018" H 6250 7150 30  0001 C CNN
-F 1 "GND" H 6250 7080 30  0001 C CNN
-F 2 "" H 6250 7150 60  0000 C CNN
-F 3 "" H 6250 7150 60  0000 C CNN
-	1    6250 7150
+P 6150 7150
+F 0 "#PWR018" H 6150 7150 30  0001 C CNN
+F 1 "GND" H 6150 7080 30  0001 C CNN
+F 2 "" H 6150 7150 60  0000 C CNN
+F 3 "" H 6150 7150 60  0000 C CNN
+	1    6150 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -831,11 +847,15 @@ F 3 "" H 7450 9550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 8750 7500 8750
+	7400 8750 7450 8750
+Wire Wire Line
+	7450 8750 7500 8750
 Wire Wire Line
 	7050 8850 7500 8850
 Wire Wire Line
-	7050 8600 7050 8850
+	7050 8600 7050 8750
+Wire Wire Line
+	7050 8750 7050 8850
 Wire Wire Line
 	7500 8950 6750 8950
 Wire Wire Line
@@ -848,11 +868,11 @@ Wire Wire Line
 	7500 9350 6750 9350
 Wire Wire Line
 	7500 9450 6750 9450
-Text Label 6700 6550 0    60   ~ 0
+Text Label 6600 6550 0    60   ~ 0
 SCK
-Text Label 6700 6450 0    60   ~ 0
+Text Label 6600 6450 0    60   ~ 0
 MISO
-Text Label 6700 6350 0    60   ~ 0
+Text Label 6600 6350 0    60   ~ 0
 MOSI
 Text Label 6750 9150 0    60   ~ 0
 SCK
@@ -864,7 +884,7 @@ Text Label 6750 9050 0    60   ~ 0
 NRF_SS
 Text Label 6750 8950 0    60   ~ 0
 NRF_EN
-Text Label 6700 6650 0    60   ~ 0
+Text Label 6600 6650 0    60   ~ 0
 NRF_SS
 Text Label 9250 6550 2    60   ~ 0
 NRF_EN
@@ -996,7 +1016,9 @@ $EndComp
 Wire Wire Line
 	1150 6900 1000 6900
 Wire Wire Line
-	1000 6800 1000 7100
+	1000 6800 1000 6900
+Wire Wire Line
+	1000 6900 1000 7100
 Wire Wire Line
 	1150 6800 1000 6800
 Connection ~ 1000 6900
@@ -1023,7 +1045,9 @@ F 3 "~" H 1650 6600 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 6800 2400 6800
+	1550 6800 1650 6800
+Wire Wire Line
+	1650 6800 2400 6800
 Wire Wire Line
 	1650 6800 1650 6750
 Wire Wire Line
@@ -1193,7 +1217,9 @@ Wire Wire Line
 Wire Wire Line
 	9500 6350 9700 6350
 Wire Wire Line
-	9700 6300 9700 6400
+	9700 6300 9700 6350
+Wire Wire Line
+	9700 6350 9700 6400
 $Comp
 L +3.3V #PWR024
 U 1 1 586AE186
