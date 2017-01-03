@@ -332,9 +332,9 @@ Wire Wire Line
 	6250 6350 7050 6350
 Wire Wire Line
 	6250 6450 7050 6450
-Text Label 6600 6150 0    60   ~ 0
-SNSR2
 Text Label 6600 6250 0    60   ~ 0
+SNSR2
+Text Label 6600 6150 0    60   ~ 0
 SNSR1
 $Comp
 L SUPPLY PWRSPLY1
