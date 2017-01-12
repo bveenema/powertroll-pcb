@@ -1,0 +1,13 @@
+* C:\powertroll-pcb\Spice\AC_FET_DRIVER.asc
+V1 N001 N005 SINE(0 120 60)
+R1 N001 N002 8
+M1 N002 N004 0 0 R6020PNJ
+V2 N003 0 PULSE(0 120 0 10ns 10ns 125us 250us)
+R2 N004 N003 10
+M2 N005 N004 0 0 R6020PNJ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\MCD\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 16ms
+.backanno
+.end
